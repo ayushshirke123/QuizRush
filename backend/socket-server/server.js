@@ -411,13 +411,3 @@ app.get("*", (req, res) => {
 // -------------------- Start Server --------------------
 const PORT = process.env.PORT || 5000;
 httpServer.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
-
-const path = require("path");
-
-// Serve Angular frontend
-app.use(express.static(path.join(__dirname, "public")));
-
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "index.html"));
-});
-
