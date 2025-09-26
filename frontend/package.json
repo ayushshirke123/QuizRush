@@ -2,14 +2,13 @@
     "name": "aptitude-game-site",
     "version": "0.0.0",
     "scripts": {
-  "ng": "ng",
-  "start": "ng serve",
-  "build": "ng build",
-  "watch": "ng build --watch --configuration development",
-  "test": "ng test",
-  "build-and-copy": "ng build --configuration production && rmdir /s /q ..\\backend\\public && mkdir ..\\backend\\public && xcopy /E /I /Y dist\\aptitude-game-site ..\\backend\\public\\"
-}
-,
+        "ng": "ng",
+        "start": "ng serve",
+        "build": "ng build",
+        "watch": "ng build --watch --configuration development",
+        "test": "ng test",
+        "build-and-copy": "ng build --configuration production && rmdir /s /q ..\\backend\\public && mkdir ..\\backend\\public && xcopy /E /I /Y dist\\aptitude-game-site ..\\backend\\public\\"
+    },
     "prettier": {
         "overrides": [
             {
@@ -55,6 +54,7 @@
         "karma-jasmine": "~5.1.0",
         "karma-jasmine-html-reporter": "~2.1.0",
         "postcss": "^8.5.6",
+        "rimraf": "^5.0.10",
         "tailwindcss": "^4.1.11",
         "typescript": "~5.8.2"
     },
